@@ -49,13 +49,8 @@ class Home extends CI_Controller {
 		{
 			$loginInfo=$query->row_array();
 			
-			$_SESSION["user_id"]=$loginInfo['user_id'];
-			$_SESSION["user_name"]=$loginInfo['user_name'];
-			$_SESSION["user_team_name"]=$loginInfo['user_team_name'];
-			$_SESSION["birthday"]=$loginInfo['birthday'];
-			$_SESSION["country"]=$loginInfo['country'];
-            $_SESSION["email"]=$loginInfo['email'];
-			$_SESSION["password"]=$loginInfo['password'];
+			$_SESSION["user_id"]=$loginInfo['id'];
+			$_SESSION["user_name"]=$loginInfo['name'];
 			
             //header("Location:home.php");
 			echo 'Success </br>';

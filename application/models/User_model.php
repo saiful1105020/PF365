@@ -9,7 +9,7 @@ class User_model extends CI_Model
 		
 	public function get_loginInfo($data)
 	{
-		$query = $this->db->get_where('userInfo', array('email' => $data['email'],'password' => $data['password']));
+		$query = $this->db->get_where('user', array('email' => $data['email'],'password' => $data['password']));
 		return $query;
 	}
 }
